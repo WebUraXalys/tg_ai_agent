@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.pyc
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+logs/
+bot.log
+
+# Project specific
+temp/
+downloads/
+uploads/
+*.ogg
+*.mp3
+*.wav
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.txt
+!requirements.txt
+!README.md
