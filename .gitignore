@@ -27,6 +27,7 @@ wheels/
 .venv
 env/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
@@ -38,13 +39,20 @@ venv.bak/
 *.swo
 .DS_Store
 
-# Logs
-*.log
-logs/
-bot.log
-
 # Project specific
+logs/
+*.log
+*.db
+*.sqlite3
 temp/
+uploads/
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
 downloads/
 uploads/
 *.ogg

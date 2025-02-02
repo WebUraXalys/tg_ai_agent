@@ -3,11 +3,11 @@
 A Telegram bot that processes audio messages using RAG (Retrieval-Augmented Generation) and LLM technologies. The bot transcribes audio, analyzes content against a knowledge base, and provides relevant responses.
 
 ## Features
-- Audio message processing using OpenAI Whisper
-- RAG system implementation with Pinecone vector database
-- Document processing support (PDF, DOCX, XLSX, PPTX)
-- LLM integration with GPT-4
-- Comprehensive error handling and logging
+- 🎤 **Voice Message Processing**: Convert voice messages to text and analyze client information
+- 📄 **Document Processing**: Learn from various document formats (PDF, Word, Excel, PowerPoint)
+- 👥 **Client Management**: Save and edit client information automatically
+- 🤖 **AI-Powered Responses**: Generate structured responses using GPT-4
+- 📊 **RAG Integration**: Utilize Retrieval-Augmented Generation for accurate responses
 
 - 🎤 Обробка голосових повідомлень за допомогою OpenAI Whisper
 - 🔍 RAG система з використанням векторної бази даних Pinecone
@@ -21,8 +21,13 @@ A Telegram bot that processes audio messages using RAG (Retrieval-Augmented Gene
 - 📊 Комплексна обробка помилок та логування
 - 🇺🇦 Повна підтримка української мови
 
-## Prerequisites
+## Supported File Formats
 
+- Text files (.txt, .md)
+- PDF documents (.pdf)
+- Word documents (.doc, .docx)
+- Excel spreadsheets (.xlsx)
+- PowerPoint presentations (.pptx)
 
 - Telegram Bot Token
 - OpenAI API Key
@@ -32,8 +37,8 @@ A Telegram bot that processes audio messages using RAG (Retrieval-Augmented Gene
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tg-ai-agent.git
-cd tg-ai-agent
+git clone https://github.com/yourusername/tg_ai_agent.git
+cd tg_ai_agent
 ```
 
 2. Install dependencies:
@@ -72,13 +77,18 @@ tg-ai-agent/
 └── README.md
 ```
 
-## Налаштування
+## Usage
 
-У файлі `.env` необхідно вказати:
+1. Start the bot:
+```bash
+python src/bot.py
+```
 
-```env
-# Telegram Bot
-TELEGRAM_BOT_TOKEN=your_telegram_token
+2. In Telegram:
+   - Start a chat with the bot using `/start`
+   - Send voice messages for client interactions
+   - Upload documents for the bot to learn from
+   - Manage client information using inline buttons
 
 # OpenAI
 OPENAI_API_KEY=your_openai_key
@@ -96,7 +106,7 @@ CHUNK_OVERLAP=100
 LOG_LEVEL=INFO
 ```
 
-## Використання
+## Contributing
 
 1. Запустіть бота:
 ```bash
@@ -109,4 +119,4 @@ python src/main.py
    - Надсилайте голосові повідомлення з питаннями
    - Завантажуйте документи для навчання бота
 
-## Логування
+This project is licensed under the MIT License - see the LICENSE file for details.
